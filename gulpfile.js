@@ -119,3 +119,6 @@ gulp.task('default', gulp.series(
   gulp.parallel(styles, scripts, htmls, img, fonts),
   gulp.parallel(watch, serve)
 ));
+gulp.task('serve', gulp.series(
+  gulp.parallel(watch, serve)
+));
